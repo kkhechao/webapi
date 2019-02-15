@@ -1,0 +1,23 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Lines that start with '#' are comments.
+*~
+*.diff
+*#
+.classpath
+.project
+.settings
+bin/flume-env.sh
+conf/flume-site.xml
+bin/.settings
+.eclipse
+pmd_report.html
+*/bin
+target
+patchprocess
+derby.log
+.idea
+*.iml
+*/*.iml
+nb-configuration.xml
+.DS_Store
+SystemServiceImpl.java

@@ -1,0 +1,4 @@
+### 得到微信支付参数
+GET http://localhost:8080/pay/wechat
+
+###

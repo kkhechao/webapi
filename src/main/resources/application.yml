@@ -1,0 +1,47 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: healthbutler-api
+  profiles:
+    active: dev
+    include: "base"
+  http:
+    encoding.charset: UTF-8
+    encoding.enable: true
+    encoding.force: true
+    multipart:
+      enabled: true
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 60000
+
+live:
+  regionId: cn-shanghai
+  accessKeyId: LTAI0MUNr2xW4w59
+  secret: 0y0Ed1PgY6nhkziTRArr341kfeRIFv
+  domainName: push.ccuol.com
+  appName: AppName
+  actionName: DescribeLiveStreamsOnlineList
+
+
+disease:
+  currency:
+    name: 胰腺癌,慢性淋巴细胞白血病,甲状腺癌,膀胱癌,胃癌,皮肤癌,肾癌,慢性粒细胞白血病,肝癌,食管癌,胆囊,结肠癌,鼻咽癌,肺癌,直肠癌,淋巴癌
+  woman:
+    name: 乳腺癌,宫颈癌,卵巢癌
+  man:
+    name: 前列腺癌
+
+
+sample:
+  man:
+    geneOrderId: 201806141025480001
+  woman:
+    geneOrderId: 201806141025480001

@@ -1,0 +1,3 @@
+GET http://localhost:8080/system/sendCaptcha?phone=13688031263&type=LOGIN
+
+###

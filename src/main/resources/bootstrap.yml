@@ -1,0 +1,38 @@
+spring:
+  cloud:
+    config:
+      uri: http://config-server:9001
+      name: common,webapi
+      profile: dev
+
+---
+
+spring:
+  profiles: test
+  cloud:
+    config:
+      uri: http://config-server:9001
+      name: common,webapi
+      profile: test
+
+
+---
+
+spring:
+  profiles: uat
+  cloud:
+    config:
+      uri: http://config-server:9001
+      name: common,webapi
+      profile: uat
+
+
+---
+
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: http://config-server:9001
+      name: common,webapi
+      profile: prod
